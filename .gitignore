@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment files
+.env
+.env.*
+.env.local
+
+# Secrets and credentials
+**/api_key*
+**/secret*
+credentials*
+*.pem
+*.key
+
+# Claude/AI config
+CLAUDE.md
+AGENTS.md
+.claude/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+*.zip
+*.crx
+
+# Logs
+*.log
+npm-debug.log*
