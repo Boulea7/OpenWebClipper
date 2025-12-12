@@ -1,0 +1,54 @@
+{
+  "extension_name": {
+    "message": "Open Web Clipper",
+    "description": "Name of the extension"
+  },
+  "extension_description": {
+    "message": "Capture web pages as Markdown with customizable templates",
+    "description": "Description of the extension"
+  },
+  "popup_title": {
+    "message": "Open Web Clipper",
+    "description": "Title shown in popup"
+  },
+  "button_copy": {
+    "message": "Copy",
+    "description": "Copy button label"
+  },
+  "button_save": {
+    "message": "Save",
+    "description": "Save button label"
+  },
+  "label_template": {
+    "message": "Template",
+    "description": "Template selector label"
+  },
+  "label_note_name": {
+    "message": "Note Name",
+    "description": "Note name input label"
+  },
+  "label_preview": {
+    "message": "Preview",
+    "description": "Preview section label"
+  },
+  "message_copied": {
+    "message": "Copied to clipboard!",
+    "description": "Success message after copying"
+  },
+  "message_saved": {
+    "message": "Saved successfully!",
+    "description": "Success message after saving"
+  },
+  "error_load_content": {
+    "message": "Failed to load page content",
+    "description": "Error when content cannot be loaded"
+  },
+  "context_menu_clip": {
+    "message": "Clip Page",
+    "description": "Context menu item to clip page"
+  },
+  "context_menu_clip_selection": {
+    "message": "Clip Selection",
+    "description": "Context menu item to clip selection"
+  }
+}

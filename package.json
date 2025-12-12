@@ -1,0 +1,72 @@
+{
+  "name": "open-web-clipper",
+  "version": "0.1.0",
+  "description": "Open source web clipper with flexible API support. Capture web pages as Markdown with customizable templates.",
+  "main": "dist/api/index.js",
+  "types": "dist/api/index.d.ts",
+  "scripts": {
+    "dev": "npm run dev:chrome",
+    "dev:chrome": "webpack --watch --env BROWSER=chrome --mode development",
+    "dev:firefox": "webpack --watch --env BROWSER=firefox --mode development",
+    "dev:safari": "webpack --watch --env BROWSER=safari --mode development",
+    "build": "npm run build:chrome && npm run build:firefox && npm run build:safari",
+    "build:chrome": "webpack --env BROWSER=chrome --mode production",
+    "build:firefox": "webpack --env BROWSER=firefox --mode production",
+    "build:safari": "webpack --env BROWSER=safari --mode production",
+    "build:lib": "tsc -p tsconfig.lib.json",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "test": "jest",
+    "clean": "rm -rf dist dist_firefox dist_safari"
+  },
+  "keywords": [
+    "web-clipper",
+    "markdown",
+    "browser-extension",
+    "obsidian",
+    "notion",
+    "content-extraction",
+    "html-to-markdown"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Boulea7/OpenWebClipper.git"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "@types/dompurify": "^3.0.5",
+    "@types/node": "^22.5.4",
+    "@types/turndown": "^5.0.5",
+    "@types/webextension-polyfill": "^0.12.1",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "mini-css-extract-plugin": "^2.9.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.4",
+    "webextension-polyfill": "^0.12.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "zip-webpack-plugin": "^4.0.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "defuddle": "^0.6.6",
+    "dompurify": "^3.0.9",
+    "highlight.js": "^11.11.1",
+    "lucide": "^0.359.0",
+    "lz-string": "^1.5.0",
+    "mathml-to-latex": "^1.4.1",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}

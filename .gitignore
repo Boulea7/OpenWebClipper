@@ -31,9 +31,15 @@ Thumbs.db
 
 # Build output
 dist/
+dist_firefox/
+dist_safari/
 build/
 *.zip
 *.crx
+*.xpi
+
+# Reference (cloned repos for study)
+reference/
 
 # Logs
 *.log
